@@ -1,0 +1,2 @@
+# EM-Manager
+OpenWebsoccer EM
