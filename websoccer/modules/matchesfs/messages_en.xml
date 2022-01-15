@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE messages SYSTEM "../messages.dtd">
+<messages>
+    <message id="matchesfs_navlabel">Friendly</message>
+
+    <message id="matchesfs_tab_schedule">Schedule FS</message>
+    <message id="matchesfs_tab_requests">FS requests</message>
+
+	<message id="matchesfs_title_schedule">Schedule friendly match</message>
+    <message id="matchesfs_title_requests">Open Friendly Match Requests</message>
+
+    <message id="matchesfs_date_label">Date</message>
+    <message id="matchesfs_opponent_label">Opponent</message>
+    <message id="matchesfs_shootout_label">Penalty shootout in the event of a tie?</message>
+
+    <message id="button_save_fs">Send game request</message>
+
+    <message id="matchesfs_nav_matchdate">match date</message>
+    <message id="matchesfs_nav_opponent">Opponent</message>
+    <message id="matchesfs_nav_stadium">Stadium</message>
+    <message id="matchesfs_nav_shootout">Penalty shootout</message>
+
+    <message id="matchesfs_opponent_has_no_manager">The selected opponent has no manager.</message>
+    <message id="matchesfs_error_team_opponent_equal">You cannot play against your own team.</message>
+    <message id="matchesfs_date_in_past">The match date must be at least 10 minutes in the future.</message>
+    <message id="matchesfs_too_many_requests_home">You already have %d or more friendlies scheduled.</message>
+    <message id="matchesfs_too_many_requests_guest">The opponent has already scheduled %d or more friendlies.</message>
+
+    <message id="matchesfs_matchrequest_create_success">The match request was sent successfully.</message>
+    <message id="matchesfs_notification_matchrequest"><strong>{sendername}</strong> sent you a FS request.</message>
+
+    <message id="matchesfs_no_sent_requests">You currently have no friendly match requests.</message>
+
+    <message id="matchesfs_reject_match">Reject friendly match?</message>
+    <message id="matchesfs_button_reject">Reject</message>
+
+    <message id="matchesfs_request_notfound">The match request was not found.</message>
+    <message id="matchesfs_notification_rejected"><strong>{sendername}</strong> rejected your FS request.</message>
+    <message id="matchesfs_request_reject_success">Rejection submitted.</message>
+    <message id="matchesfs_notification_accepted"><strong>{sendername}</strong>accepted your FS request.</message>
+    <message id="matchesfs_request_accept_success">The acceptance has been submitted and the friendly has been scheduled.</message>
+</messages>
