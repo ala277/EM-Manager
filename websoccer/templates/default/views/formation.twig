@@ -141,16 +141,24 @@
 			</div>
 		</div>
 		
-		<div class="control-group">
-			<label class="control-label" for="counterattacks">{{ i18n.getMessage("formation_option_counterattacks") }} <i class="icon-question-sign wstooltip" data-toggle="tooltip" title="{{ i18n.getMessage('formation_option_counterattacks_help') }}"></i></label>
-			<div class="controls">
-				<div class="make-switch" 
-					data-on-label="{{ i18n.getMessage("formation_switch_on") }}" data-off-label="{{ i18n.getMessage("formation_switch_off") }}" 
-					data-on="success" data-off="warning">
-					<input type="checkbox" id="counterattacks" name="counterattacks" value="1"{% if formation.counterattacks is defined and formation.counterattacks %} checked{% endif %}>
-				</div>
-			</div>
-		</div>
+				<div>	<h4>{{ i18n.getMessage("formation_marking") }}</h4>
+
+ <select name="marking" id="marking">
+ <option value="zon">{{ i18n.getMessage("zonal_marking") }}</option>
+ <option value="man">{{ i18n.getMessage("man_marking") }}</option>
+ <option value="clo">{{ i18n.getMessage("close_marking") }}</option>
+ <option value="dee">{{ i18n.getMessage("deep_marking") }}</option>
+</select>
+
+<h4>{{ i18n.getMessage("formation_attacking") }}</h4>
+
+ <select name="marking" id="marking">
+ <option value="zon">{{ i18n.getMessage("mix_attacking") }}</option>
+ <option value="man">{{ i18n.getMessage("center_attacking") }}</option>
+ <option value="clo">{{ i18n.getMessage("right_attacking") }}</option>
+<option value="dee">{{ i18n.getMessage("left_attacking") }}</option>
+</select> </div>
+		
 		{% if env.getConfig("formation_max_templates") > 0 and not env.getRequestParameter("nationalteam") %}
 		<hr/>
 		{{ formelements.textfield('templatename', i18n.getMessage('formation_templatename_field'), env.getRequestParameter('templatename'), false, validationMsg, 'text', i18n.getMessage('formation_templatename_field_help')) }}
@@ -173,3 +181,4 @@
 	<input type="hidden" name="nationalteam" value="{{ env.getRequestParameter("nationalteam") }}" />
 	
 {% endblock %}
+		
